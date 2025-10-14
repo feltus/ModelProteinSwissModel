@@ -8,13 +8,20 @@ Builds structural prediction based on known structure template with significant 
 
 The described process outlines the main steps involved in homology modeling, a computational technique used to predict the three-dimensional (3D) structure of a protein based on an experimentally determined structure of a related homologous protein (the template). [1, 2, 3, 4, 5] . The steps of homology modeling include:
 
-Step 1: Template Recognition and Initial AlignmentThis initial stage involves finding one or more suitable homologous proteins with known structures from databases like the Protein Data Bank (PDB). An initial alignment between the target protein's amino acid sequence and the template's sequence is then generated using bioinformatics tools like BLAST. The goal is to identify a template that is structurally similar to the target protein. [1, 2, 6, 7, 8]  
-Step 2: Correction of Initial AlignmentThe initial sequence alignment often requires manual correction or refinement, especially for remote homologs with low sequence identity. This step ensures that important functional or conserved residues are correctly aligned, as alignment errors can introduce significant inaccuracies into the final model. Multiple sequence alignment programs like CLUSTALW can also be used to aid in this process. [1, 9, 10, 11, 12]  
-Step 3: Generation of the BackboneIn this step, the core backbone of the protein model is constructed based on the structure of the aligned template. The coordinates for the backbone atoms (the peptide chain) are transferred directly from the template structure, effectively building a rough skeleton of the target protein. [13, 14, 15, 16, 17]  
-Step 4: Modeling of Inserted LoopsProteins often have insertions or deletions relative to their templates, particularly in loop regions. These loops cannot be modeled directly from the template and must be built de novo or with specific loop-modeling algorithms. These computational methods generate and evaluate possible loop conformations to find the most sterically and energetically favorable one. [1, 18, 19, 20, 21]  
-Step 5: Modeling of the SidechainsAfter the protein backbone is in place, the amino acid sidechains are added. The placement of sidechains is often done using rotamer libraries, which contain a set of common, low-energy sidechain conformations. The algorithm must consider both the backbone conformation and potential clashes with neighboring atoms when placing the sidechains. [1, 22, 23, 24, 25]  
-Step 6: Optimization of the Model by an Energy Minimization ExperimentThe final, full-atom model may contain minor steric clashes or unfavorable bond geometries. Energy minimization is used to resolve these issues by making small adjustments to atomic positions to improve the overall stereochemistry and reduce the potential energy of the model. [1, 26, 27, 28, 29]  
-Step 7: Model ValidationAfter generating and optimizing the model, its quality must be assessed. This can be done by hand or with specific servers and programs that evaluate structural properties. Common validation methods include: 
+## Step 1: Template Recognition and Initial Alignment
+This initial stage involves finding one or more suitable homologous proteins with known structures from databases like the Protein Data Bank (PDB). An initial alignment between the target protein's amino acid sequence and the template's sequence is then generated using bioinformatics tools like BLAST. The goal is to identify a template that is structurally similar to the target protein. [1, 2, 6, 7, 8]  
+## Step 2: Correction of Initial Alignment
+The initial sequence alignment often requires manual correction or refinement, especially for remote homologs with low sequence identity. This step ensures that important functional or conserved residues are correctly aligned, as alignment errors can introduce significant inaccuracies into the final model. Multiple sequence alignment programs like CLUSTALW can also be used to aid in this process. [1, 9, 10, 11, 12]  
+## Step 3: Generation of the Backbone
+In this step, the core backbone of the protein model is constructed based on the structure of the aligned template. The coordinates for the backbone atoms (the peptide chain) are transferred directly from the template structure, effectively building a rough skeleton of the target protein. [13, 14, 15, 16, 17]  
+## Step 4: Modeling of Inserted Loops
+Proteins often have insertions or deletions relative to their templates, particularly in loop regions. These loops cannot be modeled directly from the template and must be built de novo or with specific loop-modeling algorithms. These computational methods generate and evaluate possible loop conformations to find the most sterically and energetically favorable one. [1, 18, 19, 20, 21]  
+## Step 5: Modeling of the Sidechains
+After the protein backbone is in place, the amino acid sidechains are added. The placement of sidechains is often done using rotamer libraries, which contain a set of common, low-energy sidechain conformations. The algorithm must consider both the backbone conformation and potential clashes with neighboring atoms when placing the sidechains. [1, 22, 23, 24, 25]  
+## Step 6: Optimization of the Model by an Energy Minimization Experiment
+The final, full-atom model may contain minor steric clashes or unfavorable bond geometries. Energy minimization is used to resolve these issues by making small adjustments to atomic positions to improve the overall stereochemistry and reduce the potential energy of the model. [1, 26, 27, 28, 29]  
+## Step 7: Model Validation
+After generating and optimizing the model, its quality must be assessed. This can be done by hand or with specific servers and programs that evaluate structural properties. Common validation methods include: 
 
 • Ramachandran plots: Analyzing the distribution of backbone dihedral angles to check for energetically unfavorable conformations. 
 • Checking stereochemistry: Ensuring proper bond lengths and angles. 
@@ -41,7 +48,7 @@ Model a primary protein sequence using Swiss-Model.
 #### Step A. 
 Find the SARS-Cov-2 Spike protein by searching the NCBI proteindatabasewith this PDB identifier: ‘7C01_B’.  Grab the FASTA sequence and save on the Linux desktop in a text file.  Call it something like ‘7C01_B.fasta’.
 #### Step B. 
-Go to SWISS-MODEL at  https://swissmodel.expasy.org/ . Paste you’re your sequence and start a model build.  Once complete, examine your model and paste the ‘Model Results’ into a LibreOffice writer file with your first and last name in the filename.  
+Go to SWISS-MODEL at  https://swissmodel.expasy.org/ . Paste you’re your sequence and start a model build.  Once complete, examine your model and paste the ‘Model Results’ into a plain text file file with o spaces in the file name and upload to Canvas.  
 
 ## References
 [1] https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/class-architecture-topology-homology
