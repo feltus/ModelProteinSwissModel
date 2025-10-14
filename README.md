@@ -24,11 +24,15 @@ The final, full-atom model may contain minor steric clashes or unfavorable bond 
 After generating and optimizing the model, its quality must be assessed. This can be done by hand or with specific servers and programs that evaluate structural properties. Common validation methods include: 
 
 • Ramachandran plots: Analyzing the distribution of backbone dihedral angles to check for energetically unfavorable conformations. 
+
 • Checking stereochemistry: Ensuring proper bond lengths and angles. 
+
 • Comparing against the template: Assessing the root-mean-square deviation (RMSD) between the model and template. 
+
 • Checking packing and clashes: Making sure the model's atoms are well-packed and do not have unfavorable steric contacts. [1, 30, 31, 32, 33]  
 
-Step 8: Iteration to Correct MistakesModel validation often reveals flaws that require correction. This can involve repeating earlier steps, such as refining the alignment, re-building loops, or performing further optimization, until a structurally and energetically sound model is achieved. [1, 34, 35]  
+
+## Step 8: Iteration to Correct MistakesModel validation often reveals flaws that require correction. This can involve repeating earlier steps, such as refining the alignment, re-building loops, or performing further optimization, until a structurally and energetically sound model is achieved. [1, 34, 35]  
 
 ## Method 2: Threading (Fold Recognition)
 Builds structural prediction based on known structure template with or without any sequence similarity.
