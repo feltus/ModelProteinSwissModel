@@ -40,9 +40,9 @@ Based on molecular simulation and predicts structures based on physicochemical p
 In this lab, you will predict tertiary structure of the SARs-CoV-2 spike protein using the SWISS-MODEL service.
 
 ##  Lab Objectives:
-* Model a primary protein sequence at Swiss-Model
+- Model a primary protein sequence at Swiss-Model
 
-Follow these lab instructions:
+## Lab instructions:
 
 ###  Task A: 
 Model a primary protein sequence using Swiss-Model.
