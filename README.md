@@ -3,7 +3,7 @@
 ##  Lab Overview
 Accurate prediction of protein tertiary structure from primary amino acid sequence would have massive impacts in our ability to describe and engineer biological systems.  There are three main approaches to tertiary structure prediction:
 
-### Homology Modeling
+## Method 1: Homology Modeling
 Builds structural prediction based on known structure template with significant sequence similarity.
 
 The described process outlines the main steps involved in homology modeling, a computational technique used to predict the three-dimensional (3D) structure of a protein based on an experimentally determined structure of a related homologous protein (the template). [1, 2, 3, 4, 5] . The steps of homology modeling include:
@@ -30,10 +30,10 @@ After generating and optimizing the model, its quality must be assessed. This ca
 
 Step 8: Iteration to Correct MistakesModel validation often reveals flaws that require correction. This can involve repeating earlier steps, such as refining the alignment, re-building loops, or performing further optimization, until a structurally and energetically sound model is achieved. [1, 34, 35]  
 
-### Threading (Fold Recognition)
+## Method 2: Threading (Fold Recognition)
 Builds structural prediction based on known structure template with or without any sequence similarity.
 
-### Ab initio (Free modeling)
+## Method 3: Ab initio (Free modeling)
 Based on molecular simulation and predicts structures based on physicochemical principles without a structural template.
 
 In this lab, you will predict tertiary structure of the SARs-CoV-2 spike protein using the SWISS-MODEL service.
