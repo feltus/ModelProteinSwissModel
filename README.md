@@ -3,7 +3,7 @@
 ##  Lab Overview
 Accurate prediction of protein tertiary structure from primary amino acid sequence would have massive impacts in our ability to describe and engineer biological systems.  There are three main approaches to tertiary structure prediction:
 
-* Homology Modeling
+### Homology Modeling
 Builds structural prediction based on known structure template with significant sequence similarity.
 
 The described process outlines the main steps involved in homology modeling, a computational technique used to predict the three-dimensional (3D) structure of a protein based on an experimentally determined structure of a related homologous protein (the template). [1, 2, 3, 4, 5] . The steps of homology modeling include:
@@ -23,10 +23,10 @@ Step 7: Model ValidationAfter generating and optimizing the model, its quality m
 
 Step 8: Iteration to Correct MistakesModel validation often reveals flaws that require correction. This can involve repeating earlier steps, such as refining the alignment, re-building loops, or performing further optimization, until a structurally and energetically sound model is achieved. [1, 34, 35]  
 
-* Threading (Fold Recognition)
+### Threading (Fold Recognition)
 Builds structural prediction based on known structure template with or without any sequence similarity.
 
-* Ab initio (Free modeling)
+### Ab initio (Free modeling)
 Based on molecular simulation and predicts structures based on physicochemical principles without a structural template.
 
 In this lab, you will predict tertiary structure of the SARs-CoV-2 spike protein using the SWISS-MODEL service.
@@ -43,7 +43,7 @@ Find the SARS-Cov-2 Spike protein by searching the NCBI proteindatabasewith this
 #### Step B. 
 Go to SWISS-MODEL at  https://swissmodel.expasy.org/ . Paste you’re your sequence and start a model build.  Once complete, examine your model and paste the ‘Model Results’ into a LibreOffice writer file with your first and last name in the filename.  
 
-# References
+## References
 [1] https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/class-architecture-topology-homology
 [2] https://sgt.cnag.cat/services/BBibTeX/pdfs/20071110_Eswar_etal_CPPS2007.pdf
 [3] https://pubmed.ncbi.nlm.nih.gov/33659566/
