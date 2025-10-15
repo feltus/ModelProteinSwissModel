@@ -49,7 +49,7 @@ Model a primary protein sequence using Swiss-Model.
 #### Step A. 
 Find the SARS-Cov-2 Spike protein by searching the NCBI proteindatabasewith this PDB identifier: ‘7C01_B’.  Grab the FASTA sequence and save on the Linux desktop in a text file.  Call it something like ‘7C01_B.fasta’.
 #### Step B. 
-Go to SWISS-MODEL at  https://swissmodel.expasy.org/ . Paste you’re your sequence and start a model build.  Once complete, examine your model and paste the ‘Model Results’ into a plain text file file with o spaces in the file name and upload to Canvas.  
+Go to SWISS-MODEL at  https://swissmodel.expasy.org/ . Paste you’re your sequence and start a model build.  Once complete, examine your model. Does it make sense?  
 
 ## References
 [1] https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/class-architecture-topology-homology
