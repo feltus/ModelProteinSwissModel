@@ -47,7 +47,7 @@ In this lab, you will predict tertiary structure of the SARs-CoV-2 spike protein
 ###  Task A: 
 Model a primary protein sequence using Swiss-Model.
 #### Step A. 
-Find the SARS-Cov-2 Spike protein by searching the NCBI proteindatabasewith this PDB identifier: ‘7C01_B’.  Grab the FASTA sequence and save on the Linux desktop in a text file.  Call it something like ‘7C01_B.fasta’.
+Find the SARS-Cov-2 Spike protein by searching the NCBI protein database with this PDB identifier: ‘7C01_B’.  Grab the FASTA sequence and save on the Linux desktop in a text file.  Call it something like ‘7C01_B.fasta’.
 #### Step B. 
 Go to SWISS-MODEL at  https://swissmodel.expasy.org/ . Paste you’re your sequence and start a model build.  Once complete, examine your model. Does it make sense?  
 
